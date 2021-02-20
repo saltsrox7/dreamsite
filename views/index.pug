@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  script(src="../javascripts/dreamgen.js")
+  .pageContainer
+    .adContainer
+      h1 ADs go here
+    .pageContentContainer
+      h1 Do you have Dream luck?
+      h1 Click the button below to find out! It runs a simulation program to decide if you are as lucky as dream was in his speedruns!
+      .generateButton(onclick="randomDreamGen()") SIMULATE!
+      p Good luck!
+    .adContainer
+      h1 ADs go here

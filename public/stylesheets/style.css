@@ -1,0 +1,91 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #252C45;
+  color: white;
+  margin: 0;
+  padding: 0;
+  }
+
+a {
+  color: #00B7FF;
+}
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 75%;
+  padding: .3em;
+  text-align: center;
+  background-color: rgba(0, 225, 255, 0.116);
+  border-radius: 5em;
+}
+
+.navContainer  li {
+  display:block;
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: x-large;
+  justify-content: center;
+  padding: 1em;  
+}
+.navContainer li a:hover {
+  background-color: rgba(0, 24, 68, 0.199);
+  border-radius: 10em;
+}
+.navContainer li a {
+  text-decoration: none;
+  color: rgb(255, 102, 0);   
+  padding: 1em;  
+}
+@media all and (max-width: 600px) {  
+    
+  .navContainer {  
+    flex-wrap: wrap;  
+  }  
+    
+  .navContainer  li {  
+    flex-basis: 50%;  
+    padding: .5em;
+  }
+
+}
+@media all and (max-width: 400px) {  
+  .navContainer  li {  
+    flex-basis: 100%;  
+  }  
+}
+.pageContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.adContainer {
+  display:flex;
+  padding:0;
+  /*border: 2px solid black;*/
+}
+.pageContentContainer {
+  width: 75em;
+  /*border: 2px solid black;*/
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.generateButton {
+  border-radius: .5em;
+  background-color: rgb(118, 255, 6);
+  padding: .5em;
+  cursor: pointer;
+  font-size: 4em;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: .3em;
+  width: 75%;
+  margin: auto;
+}
+.generateButton:hover {
+  background-color: rgb(6, 255, 27);
+}
